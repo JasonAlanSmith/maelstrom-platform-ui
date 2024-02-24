@@ -6,23 +6,40 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint": "eslint . --ext cjs,js,jsx,ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@syncfusion/ej2-layouts": "^24.1.41",
+    "@syncfusion/ej2-popups": "^24.2.5",
+    "@syncfusion/ej2-react-buttons": "^24.2.7",
+    "@syncfusion/ej2-react-calendars": "^24.2.5",
+    "@syncfusion/ej2-react-dropdowns": "^24.2.7",
+    "@syncfusion/ej2-react-grids": "^24.1.45",
+    "@syncfusion/ej2-react-inputs": "^24.2.7",
+    "@syncfusion/ej2-react-layouts": "^24.1.41",
+    "@syncfusion/ej2-react-navigations": "^24.2.4",
+    "@syncfusion/ej2-react-richtexteditor": "^24.1.46",
+    "@types/uuid": "^9.0.8",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.1",
+    "uuid": "^9.0.1",
+    "vite": "^5.1.4",
+    "@vitejs/plugin-react": "^4.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "@typescript-eslint/eslint-plugin": "^7.0.2",
     "@typescript-eslint/parser": "^7.0.2",
-    "@vitejs/plugin-react": "^4.2.1",
-    "eslint": "^8.56.0",
+    "eslint": "^8.57.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.5",
-    "typescript": "^5.2.2",
-    "vite": "^5.1.4"
+    "typescript": "^5.2.2"
   }
 }
