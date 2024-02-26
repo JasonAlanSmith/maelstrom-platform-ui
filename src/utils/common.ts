@@ -9,12 +9,12 @@ export const randomIsoDateString = (): string => {
 
 export const baseUrl = 'http://127.0.0.1:8080';
 
-export const apiCall = async (
+export default async function apiCall(
   url: string,
-  data: object,
+  data = {},
   method = 'GET',
   headers = { 'Content-Type': 'application/json' },
-) => {
+) {
   let opts;
 
   if (method === 'GET') {
@@ -49,4 +49,4 @@ export const apiCall = async (
 
   const r = await fetch(url, opts);
   return r;
-};
+}

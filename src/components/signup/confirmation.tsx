@@ -4,10 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { v4 } from 'uuid';
 
 import { Organization } from '../../interfaces/organization.ts';
-import {
-  apiCall,
-  baseUrl,
-} from '../../utils/common.ts';
+import apiCall, { baseUrl } from '../../utils/common.ts';
 import useNewAccountContext from '../../utils/new_account_hook.ts';
 import useNewOrganizationContext from '../../utils/new_organization_hook.ts';
 import MPButton from '../ui/mpbutton.tsx';
