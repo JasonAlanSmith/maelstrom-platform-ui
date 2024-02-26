@@ -15,7 +15,7 @@ module.exports = {
       path: '/home/ec2-user/', // mention the path in ec2 instance where your code need to be eg /home/ec2-user
       'pre-deploy-local': '',
       'post-deploy':
-        'source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.cjs --env production',
+        'git pull && source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.cjs --env production',
       'pre-setup': '',
       ssh_options: 'ForwardAgent=yes',
     },
@@ -28,7 +28,7 @@ module.exports = {
       path: '/home/ec2-user/', // mention the path in ec2 instance where your code need to be eg /home/ec2-user
       'pre-deploy-local': '',
       'post-deploy':
-        'source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.cjs --env staging',
+        'git pull && source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.cjs --env staging',
       'pre-setup': '',
       ssh_options: 'ForwardAgent=yes',
     },
@@ -41,7 +41,7 @@ module.exports = {
       path: '/home/ec2-user/', // mention the path in ec2 instance where your code need to be eg /home/ec2-user
       'pre-deploy-local': '',
       'post-deploy':
-        'source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.cjs --env qa',
+        'git pull && source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.cjs --env qa',
       'pre-setup': '',
       ssh_options: 'ForwardAgent=yes',
     },
@@ -54,7 +54,7 @@ module.exports = {
       path: '/home/ec2-user/', // mention the path in ec2 instance where your code need to be eg /home/ec2-user
       'pre-deploy-local': '',
       'post-deploy':
-        'source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.cjs --env dev',
+        'git pull && source ~/.nvm/nvm.sh && npm install && npm run build && pm2 reload ecosystem.config.cjs --env dev',
       'pre-setup': '',
       ssh_options: 'ForwardAgent=yes',
     },
